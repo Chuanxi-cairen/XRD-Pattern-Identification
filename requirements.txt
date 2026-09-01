@@ -1,0 +1,20 @@
+# Dependencies for XRD Pattern Identification.
+# Extracted from the original conda environment and trimmed to only the
+# packages actually imported by the code in this repository.
+#
+# Note: torch 2.5.1 matches the original environment (Linux, CUDA 12.4). If
+# your platform/hardware differs, install the matching build from
+# https://pytorch.org/get-started/locally/ first.
+
+torch==2.5.1
+numpy==2.1.3
+pandas==2.2.3
+scipy==1.15.2
+scikit-learn==1.6.1
+matplotlib==3.10.1
+pymatgen==2025.2.18
+pyxtal==1.0.6
+umap-learn==0.5.12
+optuna==4.3.0
+tqdm==4.67.1
+psutil==7.0.0
