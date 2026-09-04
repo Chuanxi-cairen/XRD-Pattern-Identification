@@ -204,7 +204,7 @@ def build_mp_hard_mask_from_fine_table(csv_path: str, n_classes: int, required_e
         if only_allowed_elements:
             matched = required_set.issubset(elems) and elems.issubset(required_set)
         else:
-            matched = required_set.issubset(elems)
+            matched = bool(elems & required_set)
 
         if matched:
             filtered.append(row)
